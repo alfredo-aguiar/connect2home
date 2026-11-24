@@ -19,14 +19,6 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 
 
-<!-- =========================================================
-     CHART.JS
-========================================================= -->
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-treemap@4.2.0/dist/chartjs-chart-treemap.min.js"></script>
-
 
 <!-- =========================================================
      CSS
@@ -794,15 +786,6 @@ body{
 }
 
 
-#services2026{
-
-  display:block;
-
-  width:100% !important;
-
-  height:100% !important;
-
-}
 
 
 /* =========================================================
@@ -1424,7 +1407,6 @@ footer a:hover{
 }
 
 
-
 /* =========================================================
    RESPONSIVE
 ========================================================= */
@@ -1600,9 +1582,9 @@ footer a:hover{
     3-Year Story
   </button>
 
-  <button class="nav-btn">2024</button>
+    <button class="nav-btn" onclick="showTab('y2024',this)">2024</button>
 
-  <button class="nav-btn">2025</button>
+  <button class="nav-btn" onclick="showTab('y2025',this)">2025</button>
 
   <button
     class="nav-btn active"
@@ -1630,14 +1612,12 @@ footer a:hover{
     </div>
 
     <h2>
-      The best year yet: 100% of guests used positive words to describe the day.
+      Guest satisfaction reached its highest level yet.
     </h2>
 
     <p>
       108 guests and 44 service providers were surveyed in 2026.
-      Average satisfaction reached 9.2 out of 10, the highest
-      across all three years and every single one-word description
-      was positive.
+      Average satisfaction reached 9.2 out of 10, up from 8.8 in 2024.
     </p>
 
   </div>
@@ -1665,7 +1645,7 @@ footer a:hover{
       </div>
 
       <div class="kpi-sub">
-        Highest across all 3 years
+        Up from 8.8 in 2024
       </div>
 
     </div>
@@ -1703,8 +1683,7 @@ footer a:hover{
       <ul class="insight-list">
 
         <li>
-          100% of guest one-word descriptions were positive.
-        </li>
+89% of guests' one-word descriptions were positive, and only one was negative.        </li>
 
         <li>
           Housing support was guests' most requested service.
@@ -1749,8 +1728,7 @@ footer a:hover{
 
       <div class="finding">
 
-        Housing support, food assistance, and financial
-        assistance were the top needs in 2026.
+       Housing, food and donations were the top needs in 2026.
 
       </div>
 
@@ -1789,14 +1767,13 @@ footer a:hover{
       </div>
 
 
-      <div class="finding">
-        Every guest used a positive word.
+      <div class="finding">Nearly 9 in 10 guests used a positive word.</div>
       </div>
 
-<div class="flourish-embed flourish-word-cloud" data-src="visualisation/30070910"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="flourish-embed flourish-word-cloud" data-src="visualisation/30070910"></div>
       <div class="finding-note">
-        2026 was the first edition in this dataset with
-        100% positive sentiment.
+         Words shown larger appeared more often.
+
       </div>
 
 
@@ -1834,7 +1811,7 @@ footer a:hover{
               font-size:28px;
               color:var(--red);
             ">
-              49%
+              50.5%
             </div>
 
             <div style="
@@ -1861,7 +1838,7 @@ footer a:hover{
               font-size:28px;
               color:var(--green);
             ">
-              51%
+              49.5%
             </div>
 
             <div style="
@@ -1901,14 +1878,12 @@ footer a:hover{
 
       </div>
 
-      <div class="finding">
-        Eye care, housing support and ID assistance were the most common requests.
+<div class="finding">
+70% of guests said no service was missing.</div>
 
-      </div>
-
-      <div class="finding-note">
-        Guests also suggested improvements to signage, maps and event amenities.
-      </div>
+<div class="finding-note">
+  71 of the 102 guests who answered said nothing was missing. Food and dietary options were the most common request. Other services:
+</div>
 <div class="tag-cloud" id="improve-2026"></div>
 
     </div>
@@ -1917,7 +1892,7 @@ footer a:hover{
     <div class="image-card">
 
       <img
-        src="2026.jpg"
+        src="images/20261.jpg"
         alt="Connect 2 Home 2026 event"
       >
 
@@ -2051,49 +2026,10 @@ footer a:hover{
       </div>
 
 
-      <div class="finding">
-        Service provider ratings for event organisation and community impact remained exceptionally high.
-      </div>
-
-
-
-      <div class="sr">
-
-        <span class="sr-l">
-          Event organisation rating
-        </span>
-
-        <span class="sr-r">
-          4.8 / 5
-        </span>
-
-      </div>
-
-
-      <div class="sr">
-
-        <span class="sr-l">
-          Community impact rating
-        </span>
-
-        <span class="sr-r">
-          8.67 / 10
-        </span>
-
-      </div>
-
-
-      <div class="sr">
-
-        <span class="sr-l">
-          Guest needs met
-        </span>
-
-        <span class="sr-r">
-          Mostly yes
-        </span>
-
-      </div>
+     <div class="finding">Providers rated the organisation 4.8 out of 5, and all 44 said they would return.</div>
+<div class="sr"><span class="sr-l">Event organisation rating</span><span class="sr-r">4.8 / 5</span></div>
+<div class="sr"><span class="sr-l">Would take part again</span><span class="sr-r">44 of 44</span></div>
+<div class="sr"><span class="sr-l">Able to help most guests</span><span class="sr-r">37 of 44</span></div>
 
 
       <div class="callout-blue">
@@ -2107,6 +2043,297 @@ footer a:hover{
   </div>
 
 </div>
+
+
+
+<div id="y2024" class="section">
+
+  <div class="story-head">
+    <div class="year-badge">📅 2024 Event</div>
+    <h2>Strong satisfaction, with clear practical suggestions.</h2>
+    <p>33 guests and 30 service providers were surveyed in 2024. Guests reported a highly positive experience, while open feedback identified concrete improvements around navigation and service gaps.</p>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi kpi-square">
+      <div class="kpi-accent green"></div>
+      <span class="kpi-icon">⭐</span>
+      <div class="kpi-lbl">Satisfaction score</div>
+      <div class="kpi-val">8.8/10</div>
+      <div class="kpi-sub">Average guest rating out of 10</div>
+    </div>
+    <div class="kpi kpi-square">
+      <div class="kpi-accent blue"></div>
+      <span class="kpi-icon">🌟</span>
+      <div class="kpi-lbl">Provider satisfaction</div>
+      <div class="kpi-val">4.9/5</div>
+      <div class="kpi-sub">Event organisation rating</div>
+    </div>
+    <div class="kpi kpi-story">
+      <div class="kpi-accent red"></div>
+      <div class="kpi-lbl">Key findings</div>
+      <ul class="insight-list">
+        <li>Donations and material goods were the most visited service.</li>
+        <li>70% of guests rated the event 9 or 10.</li>
+        <li>Better maps and signage was the top improvement suggestion.</li>
+        <li>Eye care was the clearest requested service gap.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">What guests came for</div></div>
+      <div class="finding">Donations &amp; material goods was the #1 most visited service.</div>
+<div class="flourish-embed flourish-hierarchy" data-src="visualisation/30054669"></div><div class="flourish-fallback" data-for="visualisation/30054669"><a href="https://public.flourish.studio/visualisation/30054669/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/30054669/visualisation.json?ref=embed-script</a></div>
+
+<div class="finding-note">Guests could visit more than one service. The chart shows the number of guests who used each service. Larger blocks represent more responses.</div>
+      <div class="finding">9 in 10 guests found the services easy to find.</div>
+      <div class="finding-note" style="margin-bottom:0">30 of 33 guests said the services were easy to find.</div>
+    </div>
+
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">How guests rated the day</div></div>
+      <div class="finding">70% of guests rated the event 9 or 10 out of 10.</div>
+      <div class="finding-note">Guests rated their overall experience from 1 to 10. The average was 8.8.</div>
+      <div style="display:flex;gap:16px;">
+          <div style="flex:1;background:#EAFAF1;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--green);">70%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Rated 9–10 (23 guests)</div>
+          </div>
+          <div style="flex:1;background:var(--sand);border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--ink2);">24%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Rated 7–8 (8 guests)</div>
+          </div>
+          <div style="flex:1;background:var(--red-pale);border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--red);">6%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Rated 6 or below (2 guests)</div>
+          </div>
+        </div>
+      <div style="margin-top:22px">
+        <br><br>
+        <div class="sec-lbl" style="margin-bottom:10px"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">What guests suggested we improve</div></div>
+          <div class="finding">Maps and signage was the most common single theme.</div>
+
+        <div class="finding-note">15 of 33 guests (45%) had nothing to improve. Themes from the rest:</div>
+        <div class="tag-cloud">
+        <span class="tag">Maps &amp; signage · 4</span>
+        <span class="tag">Additional services (eye tests, housing, vaccines) · 4</span>
+        <span class="tag">Food &amp; drink options · 3</span>
+        <span class="tag">Opening time &amp; queues · 2</span>
+        <span class="tag">Donation organisation · 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">Services guests want added</div></div>
+      <div class="finding">Eye care was the clearest gap.</div>
+      <div class="finding-note">Services guests wished were available. 18 of 33 guests (55%) said nothing was missing. Number of guests shown after each service.</div>
+      <div class="tag-cloud" id="wished-2024">
+        <span class="tag">Eye care · 4</span>
+        <span class="tag">Food, drink &amp; dietary options · 2</span>
+        <span class="tag">Youth, kids &amp; entertainment · 2</span>
+        <span class="tag">Doctors, physio &amp; vaccines · 1</span>
+        <span class="tag">Clothing &amp; shoes · 1</span>
+        <span class="tag">Dental · 1</span>
+      </div>
+    </div>
+    <div class="image-card">
+      <img src="images/2024.jpg" alt="Connect 2 Home 2024 event">
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:20px">
+    <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">What to act on</div></div>
+    <div class="finding">Three practical priorities from the 2024 feedback.</div><br>
+    <div class="action-grid">
+      <div class="action-card red"><div class="action-icon">🗺️</div><h4>Improve maps &amp; signage</h4><p>Make service locations easier to understand and navigate.</p></div>
+      <div class="action-card blue"><div class="action-icon">👁️</div><h4>Explore eye care</h4><p>Eye tests and optometry were the clearest requested addition (4 guests).</p></div>
+      <div class="action-card green"><div class="action-icon">📣</div><h4>Strengthen outreach</h4><p>6 of the 27 providers who answered suggested more advertising, to reach more people who could benefit.</p></div>
+    </div>
+  </div>
+
+  <div style="margin:28px 0 20px;display:flex;align-items:center;gap:12px;">
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--sand2));"></div>
+    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);white-space:nowrap;padding:0 12px;">Service Provider Results</span>
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--sand2),transparent);"></div>
+  </div>
+
+  <div class="g2">
+    <div class="card-provider">
+      <div class="sec-lbl"><div class="sec-lbl-dot" style="background:var(--blue)"></div><div class="sec-lbl-text" style="color:var(--blue-mid)">What providers said was most rewarding</div></div>
+      <div class="finding">Connecting with people was the most common theme.</div>
+      <div class="finding-note">Direct quotes from service providers surveyed in 2024.</div>
+      <div class="quote-grid" id="rwd-2024">
+        <div class="quote-blue">
+          “Giving back to the community”
+        </div>
+        <div class="quote-blue">
+          “See how grateful and happy people were”
+        </div>
+        <div class="quote-blue">
+          “Connecting directly with people in need”
+        </div>
+        <div class="quote-blue">
+          “See the homeless community feel seen and validated”
+        </div>
+      </div>
+      <p class="chart-note">Connecting with people: 10 of 30 providers (33%) · Helping people: 9 (30%) · Sharing information: 6 (20%)</p>
+    </div>
+    <div class="card-provider">
+      <div class="sec-lbl"><div class="sec-lbl-dot" style="background:var(--blue)"></div><div class="sec-lbl-text" style="color:var(--blue-mid)">Service provider feedback</div></div>
+      <div class="finding">Providers rated the event's impact on the community 8.63 out of 10.</div>
+      <div class="finding-note">Responses from all 30 service provider organisations at the 2024 event.</div>
+      <div class="sr"><span class="sr-l">Event organisation rating</span><span class="sr-r">4.9 / 5</span></div>
+      <div class="sr"><span class="sr-l">Community impact rating</span><span class="sr-r">8.63 / 10</span></div>
+      <div class="sr"><span class="sr-l">Organisations surveyed</span><span class="sr-r">30</span></div>
+      <div class="callout-blue">27 of the 30 organisations gave the event's organisation 5 out of 5, a strong sign the event is well run and trusted by the community sector.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- =========================================================
+     2025
+========================================================= -->
+<div id="y2025" class="section">
+
+  <div class="story-head">
+    <div class="year-badge">📅 2025 Event</div>
+    <h2>The event grew significantly and guests were overwhelmingly positive.</h2>
+    <p>51 guests and 43 service providers were surveyed in 2025. Of the 46 guests who described the day in one word, 91% used a positive word.</p>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi kpi-square">
+      <div class="kpi-accent green"></div>
+      <span class="kpi-icon">😊</span>
+      <div class="kpi-lbl">Positive sentiment</div>
+      <div class="kpi-val">91%</div>
+      <div class="kpi-sub">Of 46 one-word descriptions</div>
+    </div>
+    <div class="kpi kpi-square">
+      <div class="kpi-accent blue"></div>
+      <span class="kpi-icon">🌟</span>
+      <div class="kpi-lbl">Provider satisfaction</div>
+      <div class="kpi-val">4.7/5</div>
+      <div class="kpi-sub">Event organisation rating</div>
+    </div>
+    <div class="kpi kpi-story">
+      <div class="kpi-accent red"></div>
+      <div class="kpi-lbl">Key findings</div>
+      <ul class="insight-list">
+        <li>Donations and material goods were the most visited service.</li>
+        <li>91% of guests' one-word descriptions were positive.</li>
+        <li>Clothing and shoes was the most requested missing item; half of guests said nothing was missing.</li>
+        <li>Providers' top improvement suggestion was better maps and signage.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">What guests came for</div></div>
+      <div class="finding">Donations &amp; material goods remained the #1 need for the second year running.</div>
+      <div class="flourish-embed flourish-hierarchy" data-src="visualisation/31018468"><div class="flourish-fallback" data-for="visualisation/31018468"><a href="https://public.flourish.studio/visualisation/31018468/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/31018468/visualisation.json?ref=embed-script</a></div></div>
+      <div class="finding-note">The chart shows the number of guests who were looking for each service. Larger blocks represent more responses.</div>
+      <div class="finding">Half of guests said no service was missing.</div>
+      <div class="finding-note" style="margin-bottom:0">26 of 51 guests (51%) did not name a service they could not find.</div>
+    </div>
+
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">How guests felt about the day</div></div>
+      <div class="finding">9 in 10 guests used a positive word.</div>
+      <div class="flourish-embed flourish-word-cloud" data-src="visualisation/31019624"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/31019624/thumbnail" width="100%" alt="word-cloud visualization" /></noscript></div><div class="flourish-fallback" data-for="visualisation/31019624"><a href="https://public.flourish.studio/visualisation/31019624/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/31019624/visualisation.json?ref=embed-script</a></div>
+      <div class="finding-note">Guests described the day in one word. Words shown larger appeared more often.</div>
+      <div style="margin-top:16px">
+        <div class="sec-lbl" style="margin-bottom:10px"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">Tone of the words</div></div>
+        <div style="display:flex;gap:16px;">
+          <div style="flex:1;background:#EAFAF1;border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--green);">91%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Positive</div>
+          </div>
+          <div style="flex:1;background:var(--sand);border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--ink2);">7%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Neutral / mixed</div>
+          </div>
+          <div style="flex:1;background:var(--red-pale);border-radius:10px;padding:14px;text-align:center;">
+            <div style="font-family:var(--disp);font-size:28px;color:var(--red);">2%</div>
+            <div style="font-size:12px;color:var(--ink3);margin-top:4px;">Negative</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div class="card">
+      <div class="sec-lbl"><div class="sec-lbl-dot"></div><div class="sec-lbl-text">Services guests want added</div></div>
+      <div class="finding">Clothing and shoes was the most requested addition.</div>
+      <div class="finding-note">Requests were small and varied; eye care came up again. Number of guests shown after each service.</div>
+      <div class="tag-cloud" id="wished-2025">
+        <span class="tag">Other / varied requests · 7</span>
+        <span class="tag">Clothing &amp; shoes · 6</span>
+        <span class="tag">Advertising &amp; promotion · 3</span>
+        <span class="tag">Pets &amp; animal services · 3</span>
+        <span class="tag">Massage &amp; beauty · 3</span>
+        <span class="tag">Doctors, physio &amp; vaccines · 1</span>
+        <span class="tag">Eye care · 1</span>
+        <span class="tag">Employment · 1</span>
+        <span class="tag">Government, ID &amp; financial support · 1</span>
+      </div>
+    </div>
+    <div class="image-card">
+      <img src="images/2025.jpeg" alt="Connect 2 Home 2025 event">
+    </div>
+  </div>
+
+  <div style="margin:28px 0 20px;display:flex;align-items:center;gap:12px;">
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--sand2));"></div>
+    <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink3);white-space:nowrap;padding:0 12px;">Service Provider Results</span>
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,var(--sand2),transparent);"></div>
+  </div>
+
+  <div class="g2">
+    <div class="card-provider">
+      <div class="sec-lbl"><div class="sec-lbl-dot" style="background:var(--blue)"></div><div class="sec-lbl-text" style="color:var(--blue-mid)">What providers said was most rewarding</div></div>
+      <div class="finding">Providers keep coming back because of moments like these.</div>
+      <div class="finding-note">Direct quotes from service providers surveyed in 2025.</div>
+      <div class="quote-grid" id="rwd-2025">
+        <div class="quote-blue">
+          “Getting the message out, showing that you’re not alone”
+        </div>
+        <div class="quote-blue">
+          “Seeing everyone connecting with services, the guests enjoying themselves”
+        </div>
+        <div class="quote-blue">
+          “Giving a hand up not a hand out, giving away lollies”
+        </div>
+        <div class="quote-blue">
+          “Seeing people who needs help getting help”
+        </div>
+      </div>
+      <p class="chart-note">Connecting with people: 22 of 43 providers (51%) · Helping people: 16 (37%) · Networking with other providers: 9 (21%)</p>
+    </div>
+    <div class="card-provider">
+      <div class="sec-lbl"><div class="sec-lbl-dot" style="background:var(--blue)"></div><div class="sec-lbl-text" style="color:var(--blue-mid)">Service provider feedback</div></div>
+      <div class="finding">43% more providers — and satisfaction stayed very high.</div>
+      <div class="finding-note">Despite the bigger event, providers remained almost as satisfied as in 2024.</div>
+      <div class="sr"><span class="sr-l">Event organisation rating</span><span class="sr-r">4.74 / 5</span></div>
+      <div class="sr"><span class="sr-l">Community impact rating</span><span class="sr-r">8.67 / 10</span></div>
+      <div class="sr"><span class="sr-l">Organisations surveyed</span><span class="sr-r">43</span></div>
+      <div class="sr"><span class="sr-l">Most common suggestion</span><span class="sr-r">Maps &amp; signage</span></div>
+      <div class="callout-blue">The community impact score held steady, from 8.63 to 8.67, despite 43% more providers, showing the event scaled without losing quality.</div>
+    </div>
+  </div>
+
+</div>
+
+
+
 
 
 <!-- =========================================================
@@ -2150,8 +2377,7 @@ footer a:hover{
       </div>
 
       <div class="kpi-sub">
-        Highest rating recorded in 2026
-      </div>
+Up from 8.8 in 2024      </div>
 
     </div>
 
@@ -2161,7 +2387,7 @@ footer a:hover{
       <div class="kpi-accent amber"></div>
 
       <div class="kpi-lbl">
-        👥 Guest participation
+        👥 Guests surveyed
       </div>
 
       <div class="kpi-val">
@@ -2200,12 +2426,11 @@ footer a:hover{
 🤝 Community impact      </div>
 
       <div class="kpi-val">
-        8.8 → 8.7
+        8.6 → 8.7
       </div>
 
       <div class="kpi-sub">
-        Remained high across all years
-      </div>
+Provider rating, 2024 to 2025    </div>
 
     </div>
 
@@ -2239,7 +2464,7 @@ The story       </div>
 <br><br>
 This dashboard brings together three years of feedback from guests and service providers across the 2024, 2025 and 2026 editions. <b>It's more than a record of what happened. It helps show what is changing, what is working, and what can be improved.</b>
 <br><br>
-Across the three years, <b>guest participation more than tripled</b>, from 33 in 2024 to 108 in 2026, while <b>satisfaction increased</b> from 8.8 to 9.2 out of 10. Guest needs also shifted, with <b>housing support becoming the leading service need in 2026</b>. Provider reflections followed a similar progression, moving from giving back and helping people towards <b>connections, housing and longer-term outcomes.</b> Together, these insights show how the event is evolving with the needs of the community and can help shape what comes next.
+Across the three years, <b>the number of guests surveyed more than tripled</b>, from 33 in 2024 to 108 in 2026, while <b>satisfaction increased</b> from 8.8 to 9.2 out of 10. Guest needs also shifted, with <b>housing support becoming the leading service need in 2026</b>. Provider reflections followed a similar progression, moving from giving back and helping people towards <b>connections, housing and longer-term outcomes.</b> Together, these insights show how the event is evolving with the needs of the community and can help shape what comes next.
 </p>
 
 
@@ -2325,16 +2550,15 @@ While survey data shows trends and outcomes, provider reflections help illustrat
     <div class="compare-grid">
 
       <div class="compare-col">
-                <img src="2024 - Copy.jpg"
+                <img src="images/2024-copy.jpg"
         alt="Connect 2 Home 2024 event"
       >    
            
       <div class="compare-year">
-2024 | Connection          </div>
+2024 | Giving back          </div>
 
           <p class="finding-note">
-            Providers most often described helping people, giving back to the community and making guests feel seen.
-          </p>
+Providers described giving back, helping people and connecting directly with people in need.          </p>
    
 <div class="quote-blue">
           "Seeing the homeless community feel seen and validated."
@@ -2344,12 +2568,12 @@ While survey data shows trends and outcomes, provider reflections help illustrat
 
 
       <div class="compare-col">
-<img src="2025 - Copy.jpeg"
+<img src="images/2025-copy.jpeg"
         alt="Connect 2 Home 2025 event"
       >
 
         <div class="compare-year">
-          2025 | Engagement</div>
+          2025 | Connection</div>
        
         <p class="finding-note">
             Feedback increasingly focused on connecting guests with services and building community connections.
@@ -2362,7 +2586,7 @@ While survey data shows trends and outcomes, provider reflections help illustrat
 </div>
 
       <div class="compare-col">
-<img  src="2026 - Copy.jpg"
+<img  src="images/2026-copy.jpg"
         alt="Connect 2 Home 2026 event"
       >
 
@@ -2648,23 +2872,23 @@ The strongest use of this dashboard is as a planning tool. The annual pages show
 
 const DATA = {
   improve2026: [
-"Optometrist / eye care",
-"ID support",
-"Housing services",
-"More signage / maps",
-"More food options",
-"Dentist",
-"Child support",
-"Massage services",
-"Physio services",
-"Aged care information",
-"More water stations",
-"Additional seating",
-"Dietary food options",
-"More hairdressers",
-"Entertainment",
-"Lockers"
-]}
+    "Food, drink & dietary options · 5",
+    "Massage & beauty · 4",
+    "Signs & maps · 4",
+    "Donation limits & queue control · 4",
+    "ID & government support · 4",
+    "Donations · 3",
+    "Water, seating & facilities · 3",
+    "Eye care · 2",
+    "Transport & location · 2",
+    "Housing · 1",
+    "Dental · 1",
+    "Clothing & shoes · 1",
+
+    "Doctors, physio & vaccines · 1",
+    "Youth, kids & entertainment · 1",
+    "Advertising & promotion · 1"
+  ]};
 
 renderTags('improve-2026', DATA.improve2026);
 
@@ -2732,7 +2956,7 @@ function showTab(id, btn) {
 
 
   section.classList.add('active');
-
+setTimeout(function(){ window.dispatchEvent(new Event('resize')); }, 50);
 
   /*
    * Activate navigation button
